@@ -31,7 +31,7 @@ export async function deleteAccountById(id: string) {
       `${process.env.NEXT_PUBLIC_CLIENT_API_BASE_URL}/api/unipile/accounts/${id}`,
       { method: "DELETE" }
     );
-    console.log(response);
+
     if (!response.ok) {
       throw new Error(`Something went wrong fetching `);
     }
